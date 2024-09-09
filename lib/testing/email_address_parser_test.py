@@ -1,4 +1,6 @@
-from email_address_parser import EmailAddressParser
+# tests/test_email_address_parser.py
+
+from lib.email_address_parser import EmailAddressParser
 
 class TestEmailAddressParser:
     '''Class EmailAddressParser in email_address_parser.py'''
@@ -9,7 +11,7 @@ class TestEmailAddressParser:
 
     def test_has_parse_method(self):
         '''contains a method called "parse".'''
-        assert(EmailAddressParser.parse)
+        assert(EmailAddressParser("dummy").parse)
 
     def test_parses_emails_with_spaces(self):
         '''finds emails with spaces in between.'''
